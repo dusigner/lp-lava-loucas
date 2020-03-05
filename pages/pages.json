@@ -1,0 +1,32 @@
+{
+    "routes": {
+      "store/lava-loucas": {
+        "path": "/eletrodomesticos/lava-loucas"
+      }
+    },
+    "pages": {
+      "store/lava-loucas": [
+        {
+          "name": "Brastemp",
+          "template": "lava-loucas"
+        }
+      ]
+    },
+    "templates": {
+      "lava-loucas": {
+        "component": "Index",
+        "extensions": {
+          "header": {
+            "component": "brastemp.header/Header"
+          },
+          "footer": {
+            "component": "brastemp.footer/Footer"
+          }
+        },
+        "props": {
+          "title": "Máquina de lavar louça: Lava Louças | Brastemp",
+          "description": "Encontre diversos modelos de máquina de lavar louça no site da Brastemp. Lava louças Brastemp 8 serviços e mais. Saiba tudo sobre lavadoras Brastemp!"
+        }
+      }
+    }
+  }

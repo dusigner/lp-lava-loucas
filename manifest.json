@@ -1,0 +1,38 @@
+{
+  "vendor": "brastemp",
+  "name": "lp-brastemp-lavaloucas",
+  "version": "0.1.1",
+  "title": "Brastemp Lava Louças",
+  "description": "Landing Page Lava Louças",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "pages": "0.x",
+    "react": "2.x"
+  },
+  "mustUpdateAt": "2020-03-15",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "brastemp.vtexcommercestable.com.br"
+      }
+    }
+  ],
+  "dependencies": {
+    "vtex.store-graphql": "2.x",
+    "vtex.store": "1.x",
+    "brastemp.header": "1.x",
+    "brastemp.footer": "1.x",
+    "brastemp.components": "1.x",
+    "brastemp.queries": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
