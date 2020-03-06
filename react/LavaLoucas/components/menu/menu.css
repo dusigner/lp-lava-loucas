@@ -1,4 +1,4 @@
-.menu-edge {
+.menu-lp {
     background: #000;
     width: 100%;
     display: block;
@@ -7,7 +7,7 @@
     padding: 0 27px;
     z-index: 5;
 }
-.menu-edge::before {
+.menu-lp::before {
     content: "";
     width: 100%;
     height: 1px;
@@ -16,15 +16,19 @@
     bottom: 0;
     left: 0;
 }
-
-.menu-edge nav {
+.menu-lp nav ul{
     display: flex;
     align-items: flex-end;
     width: 714px;
     justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+.menu-lp nav ul li {
+    list-style: none;
 }
 
-.menu-edge nav a {
+.menu-lp nav ul li a{
     width: auto;
     display: flex;
     align-items: center;
@@ -36,33 +40,36 @@
     text-decoration: none;
     position: relative;
 
-    padding: 19.5px 7px;
+    padding: 19.5px 8px;
     margin: 0 5px;
 
     font-family: Soleto,sans-serif;
-    font-style: normal;
-    font-weight: 300;
+    font-weight: lighter;
     font-size: 14px;
     line-height: 19px;
     text-align: center;
 }
-.menu-edge nav a:first-child {
+
+/* .menu-lp nav ul li:first-child a {
     margin-left: 0;
-}
-.menu-edge nav a.active::before {
+} */
+
+
+.menu-lp nav ul li a.active::before {
     content: "";
     width: 100%;
-    height: 4px;
+    height: 3px;
     background: #E98A21;
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
 }
 
-.menu-edge nav a.active {
-    font-weight: normal;
+.menu-lp nav a.active {
+    text-shadow: 0px 0px #fff;  
 }
 
-.menu-edge nav a:last-child {
+/* BOTÃO EU QUERO - COMPRAR */
+.menu-lp nav ul li:last-child a {
     padding: 5px 0px;
     border: 1px solid #F08B1D;
     border-radius: 50px;
@@ -72,46 +79,50 @@
     text-transform: uppercase;
     width: 100px;
     bottom: 13px;
-    /* position: relative; */
-    /* left: calc(100% - 120px); */
     background: black;
-}
-/* .menu-edge nav a:last-child::after {
-    content: "";
-    padding: 10px;
-    background: black;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-} */
-.menu-edge nav a:last-child:hover {
-    background: #F08B1D;
-    color: white;
-    padding: 5px 0;
-}
-.menu-edge nav a.active:last-child::before,
-.menu-edge nav a:last-child:hover::before {
-    display: none;
-}
-.menu-edge nav a.active:last-child {
-    background: #F08B1D;
-    color: white;
-    padding: 5px 0;
 }
 
+.menu-lp nav ul li:last-child a:hover {
+    background: #F08B1D;
+    color: white;
+    padding: 5px 0;
+}/*
+.menu-lp nav ul li:last-child a.active::before,
+.menu-lp nav ul li:last-child a:hover::before {
+    display: none;
+}
+.menu-lp nav ul li a.active:last-child {
+    background: #F08B1D;
+    color: white;
+    padding: 5px 0;
+} */
+
+.target-lp {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+    top: -4px;
+}
+.menu-lp a,
+.target-lp {
+    transition: all .35s ease-in-out;
+}
+
+
+
 @media (min-width: 1024px) {
-    .menu-edge {
+    .menu-lp {
         display: flex;
         justify-content: center;
     }
-    .menu-edge nav {
+    .menu-lp nav ul{
         width: 100%;
         justify-content: center;
     }
-    .menu-edge nav a:last-child {
-        position: absolute;
-        right: 15%;
+    .menu-lp nav ul li:last-child a {
+        /* position: absolute;
+        right: 15%; */
         padding: 5px 20px;
         border: 1px solid #F08B1D;
         border-radius: 50px;
@@ -120,27 +131,22 @@
         font-size: 12px;
         text-transform: uppercase;
         width: 142px;
-        top:calc(50% - 15px)
+        /* top:calc(50% - 15px) */
     }
-   
-    
-    .menu-edge::before {
+    .menu-lp::before {
         position: absolute;
         top: unset;
         bottom: 0;
     }
-    .menu-edge nav a:hover {
-        font-weight: normal;
-        padding: 19.5px 6px;
+    .menu-lp nav ul li a:hover {
+        text-shadow: 0px 0px #fff;  
     }
-    .menu-edge nav a:hover::before {
+    /* .menu-lp nav ul li a:hover::before {
         content: "";
         width: 100%;
         height: 4px;
         background: #E98A21;
         position: absolute;
         bottom: 0;
-    }
-    
-    
+    } */
 }
