@@ -1,5 +1,13 @@
+/* COMPONENTS */
 @import url("components/menu/menu.css");
+@import url("components/button/button.css");
+@import url("components/modal/modal.css");
+@import url("components/sliderDesignPerformance/sliderDesignPerformance.css");
+@import url("components/title/title.css");
+/* LAYOUTS */
+@import url("layout/design-performance/design-performance.css");
 
+/* SLICK SLIDER */
 @import url("../node_modules/slick-carousel/slick/slick-theme.css");
 @import url("../node_modules/slick-carousel/slick/slick.css");
 

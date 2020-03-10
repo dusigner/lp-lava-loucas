@@ -109,7 +109,7 @@ class Menu extends React.Component {
                             </AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink offset={() => 0} href='#design-performance' className="links">
+                            <AnchorLink offset={() => 30} href='#design-performance' className="links">
                                 <span>Design & Performance</span>
                             </AnchorLink>
                         </li>
@@ -145,7 +145,7 @@ class Menu extends React.Component {
                         </li>
                     </ul>
                 </nav>
-                <span class="target-lp"></span>
+                <span className="target-lp"></span>
             </div>
         )
     }
