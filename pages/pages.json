@@ -21,6 +21,9 @@
           },
           "footer": {
             "component": "brastemp.footer/Footer"
+          },
+          "herocarousel": {
+            "component": "brastemp.widgets/HeroCarousel"
           }
         },
         "props": {

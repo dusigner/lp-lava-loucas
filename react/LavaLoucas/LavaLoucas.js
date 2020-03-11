@@ -86,6 +86,8 @@ class LavaLoucas extends React.Component {
 				<Headroom disableInlineStyles>
 					<Menu />
 				</Headroom>
+				
+				{/* <ExtensionPoint id="HeroCarousel"  hideSupportMenu={true} /> */}
 
 				<div id="destaque" className="destaque section">
 					DESTAQUE<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
