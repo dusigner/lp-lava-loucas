@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Headroom from 'react-headroom';
+import { StoredDatalayer } from 'brastemp.components';
 
 // Assets
 import './lava-loucas.global.css';
@@ -8,6 +9,7 @@ import './lava-loucas.global.css';
 import Menu from './components/menu/menu';
 import Modal from "./components/modal/modal";
 import SliderDesignPerformance from "./components/sliderDesignPerformance/sliderDesignPerformance";
+import HeroCarousel from './widgets/heroCarousel/src/HeroCarousel';
 
 // Layouts
 import DesignPerformance from './layout/design-performance/design-performance';
@@ -15,12 +17,26 @@ import DesignPerformance from './layout/design-performance/design-performance';
 
 class LavaLoucas extends React.Component {
 
-	state = { 
-		show1: false, 
-		show2: false, 
-		sliderNumber: null,
-		tags: null,
-	};
+	constructor(props) {
+        super(props);
+
+
+        this.state = {
+			show1: false, 
+			show2: false, 
+			sliderNumber: null,
+			tags: null,
+        }
+
+	}
+	
+	componentDidMount() {
+
+    }
+
+    componentDidUpdate() {
+  
+    }
 
 	showModal1   = e => {  
 		this.setState({ 
@@ -75,23 +91,17 @@ class LavaLoucas extends React.Component {
 		})
 	
 	}
-
-	componentDidMount() {
-		
-    }
-
+	
 	render() { 
+		const Banners = {};
+
 		return (
             <div className="lava-loucas">
 				<Headroom disableInlineStyles>
 					<Menu />
 				</Headroom>
-				
-				{/* <ExtensionPoint id="HeroCarousel"  hideSupportMenu={true} /> */}
-
-				<div id="destaque" className="destaque section">
-					DESTAQUE<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+				<div className="hero-edu">
+				<HeroCarousel data={Banners} parentState={this.state} />
 				</div>
 				<DesignPerformance openModal={this.showModal1} changeSlide={this.changeSlide} />
 				<Modal 

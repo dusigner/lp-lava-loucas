@@ -73,12 +73,15 @@
     height: 100px;
     width: 25%;
 }
-.slider__design-inovador-nav .slick-slide:hover svg,
+/* .slider__design-inovador-nav .slick-slide:hover svg,
 .slider__design-inovador-nav .slick-slide:hover svg path {
     stroke: #F08B1D;
-}
-.slider__design-inovador-nav .slick-slide:hover svg .hover {
+} */
+.slider__design-inovador-nav .slick-slide:hover svg .hover_fill {
     fill: #F08B1D;
+}
+.slider__design-inovador-nav .slick-slide:hover svg .hover_stroke {
+    stroke: #F08B1D;
 }
 .slider__design-inovador-nav .slick-slide:hover h3 {
     color: #F08B1D;

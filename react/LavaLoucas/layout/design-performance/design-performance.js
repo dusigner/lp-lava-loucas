@@ -31,28 +31,28 @@ class DesignPerformance extends React.Component {
                             this.props.openModal();
                             this.props.changeSlide(0);
                             } 
-                        } className="btn-left1" data-tag="painel-multifuncional">
-                        <Button label="Painel Touch"/>
+                        } data-tag="painel-multifuncional">
+                        <Button setClass="not_responsive" label="Painel Touch"/>
                     </span>
                     <span onClick={e => {
                         this.props.openModal(); 
                         this.props.changeSlide(1);
-                        }} className="btn-left2" data-tag="soft-close">
-                        <Button label="Gaveta de Talheres" />
+                        }} data-tag="soft-close">
+                        <Button setClass="not_responsive" label="Gaveta de Talheres" />
                     </span>
                     <span onClick={e => {
                         this.props.openModal();
                         this.props.changeSlide(3);
                         
-                        }} className="btn-right1" data-tag="agua-quente">
-                        <Button label="Identificador de Etapas" />
+                        }} data-tag="identificador-de-etapas">
+                        <Button setClass="not_responsive" label="Identificador de Etapas" />
                     </span>
                     <span onClick={e => {
                         this.props.openModal();
                         this.props.changeSlide(2);
                         
-                        }} className="btn-right2" data-tag="cesto-em-inox">
-                        <Button label="Cesto Flexível" />
+                        }} data-tag="cesto-flexivel">
+                        <Button setClass="not_responsive" label="Cesto Flexível" />
                     </span>
                     
                 </div>

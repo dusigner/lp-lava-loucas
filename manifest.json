@@ -33,7 +33,8 @@
     "brastemp.footer": "1.x",
     "brastemp.components": "1.x",
     "brastemp.queries": "1.x",
-    "brastemp.widgets": "1.x"
+    "brastemp.widgets": "1.x",
+    "brastemp.utils": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
