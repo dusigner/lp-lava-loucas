@@ -1,0 +1,25 @@
+{
+    "headline": "Purificadores",
+    "arrayBanners":[
+        {
+            "id":"banner-01",
+            "title": "Purificadores de Água para sua empresa",
+            "alt":"imagem-banner-01",   
+            "url_image_desktop": "2018/08/BannerCategoriaTemplateDesktopTablet_PurificadoresEmpresas.jpg",
+            "url_image_mobile": "2018/08/BannerCategoriaTemplateMobile_PurificadoresEmpresa.jpg",
+            "category": {
+                "name": "Purificadores de Água para sua empresa"
+            }
+        },
+        {
+            "id":"banner-02",
+            "title": "Purificadores de Água Brastemp para sua casa",
+            "alt":"imagem-banner-02",
+            "url_image_desktop": "2018/08/BannerCategoriaTemplateDesktopTablet_PurificadoresCasa.jpg",
+            "url_image_mobile": "2018/08/BannerCategoriaTemplateMobile_PurificadoresCasa.jpg",
+            "category": {
+                "name": "Purificadores de Água Brastemp para sua casa"
+            }
+        }   
+    ]
+}
