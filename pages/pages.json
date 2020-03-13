@@ -2,7 +2,10 @@
     "routes": {
       "store/lava-loucas": {
         "path": "/eletrodomesticos/lava-loucas"
-      }
+      },
+      "store/categoria": {
+        "path": "/:categoria/b"
+    }
     },
     "pages": {
       "store/lava-loucas": [

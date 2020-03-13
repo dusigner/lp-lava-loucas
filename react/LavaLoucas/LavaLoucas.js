@@ -26,9 +26,17 @@ class LavaLoucas extends React.Component {
 			show2: false, 
 			sliderNumber: null,
 			tags: null,
-        }
+		}
+		
+		StoredDatalayer.clean();
+        StoredDatalayer.start({
+            event: 'virtualPageview',
+            step: `/eletrodomesticos/lava-loucas`,
+        });
 
 	}
+
+	
 	
 	componentDidMount() {
 
@@ -93,6 +101,7 @@ class LavaLoucas extends React.Component {
 	}
 	
 	render() { 
+		const { data, title, description } = this.props;
 		const Banners = {};
 
 		return (
