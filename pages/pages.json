@@ -1,22 +1,19 @@
 {
     "routes": {
-      "store/lava-loucas": {
-        "path": "/eletrodomesticos/lava-loucas"
-      },
-      "store/categoria": {
-        "path": "/:categoria/b"
-    }
+      "store/eduardo": {
+        "path": "/eletrodomesticos/eduardo"
+      }
     },
     "pages": {
-      "store/lava-loucas": [
+      "store/eduardo": [
         {
           "name": "Brastemp",
-          "template": "lava-loucas"
+          "template": "eduardo"
         }
       ]
     },
     "templates": {
-      "lava-loucas": {
+      "eduardo": {
         "component": "Index",
         "extensions": {
           "header": {
@@ -24,9 +21,6 @@
           },
           "footer": {
             "component": "brastemp.footer/Footer"
-          },
-          "herocarousel": {
-            "component": "brastemp.widgets/HeroCarousel"
           }
         },
         "props": {
@@ -36,3 +30,4 @@
       }
     }
   }
+

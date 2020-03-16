@@ -10,29 +10,8 @@ class lavaloucas extends Component {
         super(props);
     }
 
-    setDataLayerPromos = value => {
-		const { page } = StoredDatalayer.get();
-		const { promos } = page;
-		if (!promos) {
-			StoredDatalayer.set({
-				page: {
-					promos: value
-				}
-			});
-		}
-	};
-
 	componentDidMount() {
-		StoredDatalayer.clean();
-		StoredDatalayer.start({
-			event: "virtualPageview",
-			step: "lavaloucas",
-			page: {
-				type: "lavaloucas",
-				currencyCode: "BRL",
-				promos: null
-			}
-		});
+
 	}
    
     render () { 
@@ -42,7 +21,7 @@ class lavaloucas extends Component {
                     <SEO title={"Brastemp | Sem dúvida, Brastemp."} description={"Eletrodomésticos e acessórios para sua cozinha e lavanderia. Conheça nossa linha de fogões, fornos, geladeiras, lavadoras, microondas e muito mais."} />
                     <main id="main" className="main">
                     <ExtensionPoint id="header" hideSupportMenu={true} />
-                    <LavaLoucas />
+                	<LavaLoucas />
                     <ExtensionPoint id="footer"  hideSupportMenu={true} />
                 </main>
                 </LazyLoad>

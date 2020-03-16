@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Headroom from 'react-headroom';
-import { StoredDatalayer } from 'brastemp.components';
 
 // Assets
 import './lava-loucas.global.css';
@@ -9,34 +8,22 @@ import './lava-loucas.global.css';
 import Menu from './components/menu/menu';
 import Modal from "./components/modal/modal";
 import SliderDesignPerformance from "./components/sliderDesignPerformance/sliderDesignPerformance";
-import HeroCarousel from './widgets/heroCarousel/src/HeroCarousel';
 
 // Layouts
 import DesignPerformance from './layout/design-performance/design-performance';
-import ProgramasLavagem from './layout/programas-lavagem/programas-lavagem';
+
 
 class LavaLoucas extends React.Component {
 
 	constructor(props) {
         super(props);
-
-
         this.state = {
 			show1: false, 
 			show2: false, 
 			sliderNumber: null,
 			tags: null,
 		}
-		
-		StoredDatalayer.clean();
-        StoredDatalayer.start({
-            event: 'virtualPageview',
-            step: `/eletrodomesticos/lava-loucas`,
-        });
-
 	}
-
-	
 	
 	componentDidMount() {
 
@@ -101,19 +88,11 @@ class LavaLoucas extends React.Component {
 	}
 	
 	render() { 
-		const { data, title, description } = this.props;
-		const Banners = {};
-
 		return (
             <div className="lava-loucas">
 				<Headroom disableInlineStyles>
 					<Menu />
 				</Headroom>
-
-				<div className="hero-edu">
-					<HeroCarousel data={Banners} parentState={this.state} />
-				</div>
-
 				<DesignPerformance openModal={this.showModal1} changeSlide={this.changeSlide} />
 				<Modal 
 					setClass="slider" 
@@ -121,10 +100,6 @@ class LavaLoucas extends React.Component {
 					show={this.state.show1} >
 					<SliderDesignPerformance changeSlide={this.state.sliderNumber} />
 				</Modal>
-
-				<ProgramasLavagem />
-
-
 			</div>
 		) }
 	}
