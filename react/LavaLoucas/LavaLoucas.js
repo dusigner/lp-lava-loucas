@@ -13,7 +13,7 @@ import HeroCarousel from './widgets/heroCarousel/src/HeroCarousel';
 
 // Layouts
 import DesignPerformance from './layout/design-performance/design-performance';
-
+import ProgramasLavagem from './layout/programas-lavagem/programas-lavagem';
 
 class LavaLoucas extends React.Component {
 
@@ -109,9 +109,11 @@ class LavaLoucas extends React.Component {
 				<Headroom disableInlineStyles>
 					<Menu />
 				</Headroom>
+
 				<div className="hero-edu">
-				<HeroCarousel data={Banners} parentState={this.state} />
+					<HeroCarousel data={Banners} parentState={this.state} />
 				</div>
+
 				<DesignPerformance openModal={this.showModal1} changeSlide={this.changeSlide} />
 				<Modal 
 					setClass="slider" 
@@ -119,6 +121,10 @@ class LavaLoucas extends React.Component {
 					show={this.state.show1} >
 					<SliderDesignPerformance changeSlide={this.state.sliderNumber} />
 				</Modal>
+
+				<ProgramasLavagem />
+
+
 			</div>
 		) }
 	}
