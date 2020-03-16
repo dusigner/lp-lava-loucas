@@ -146,6 +146,7 @@
 .slide__design .effect__hover {
     overflow: hidden;
     width: 100%;
+    cursor: pointer;
     
 }
 .slide__design .effect__hover img {
