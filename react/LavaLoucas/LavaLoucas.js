@@ -11,6 +11,7 @@ import SliderDesignPerformance from "./components/sliderDesignPerformance/slider
 
 // Layouts
 import DesignPerformance from './layout/design-performance/design-performance';
+import ProgamasLavagem from './layout/programas-lavagem/programas-lavagem';
 
 
 class LavaLoucas extends React.Component {
@@ -90,9 +91,16 @@ class LavaLoucas extends React.Component {
 	render() { 
 		return (
             <div className="lava-loucas">
+				
 				<Headroom disableInlineStyles>
 					<Menu />
 				</Headroom>
+				<div id="destaque" className="section">
+					DESTAQUE
+					<br/><br/><br/>
+					DESTAQUE
+					<br/><br/><br/>
+				</div>
 				<DesignPerformance openModal={this.showModal1} changeSlide={this.changeSlide} />
 				<Modal 
 					setClass="slider" 
@@ -100,6 +108,8 @@ class LavaLoucas extends React.Component {
 					show={this.state.show1} >
 					<SliderDesignPerformance changeSlide={this.state.sliderNumber} />
 				</Modal>
+
+				<ProgamasLavagem />
 			</div>
 		) }
 	}

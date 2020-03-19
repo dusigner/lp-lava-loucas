@@ -27,7 +27,9 @@
     align-items: center;
     margin-top: 30px;
 }
-
+.design-performance .featured__image-container {
+    margin: 0;
+}
 .design-performance .picture__effects picture {
     text-align: center;
     display: block;
@@ -161,7 +163,7 @@
 	transform: scale(1.09);
 }
 
-.slide__design caption {
+.slide__design figcaption {
     position: absolute;
     font-family: Soleto;
     font-style: normal;
@@ -172,8 +174,9 @@
     padding: 5px;
     bottom: 15px;
     left: 19px;
+    z-index: 1;
 }
-.slide__design caption::after {
+.slide__design figcaption::after {
     content: "";
     width: 100%;
     background: linear-gradient(91.38deg, #F08B1D 49.94%, #DB882A 136.63%);

@@ -1,19 +1,11 @@
 import React, {Component} from 'react'
-import { SEO, StoredDatalayer } from 'brastemp.components';
+import { SEO } from 'brastemp.components';
 import { ExtensionPoint } from "render";
 import LavaLoucas from "./LavaLoucas/LavaLoucas";
 import LazyLoad from 'react-lazyload';
 
 class lavaloucas extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
-	componentDidMount() {
-
-	}
-   
+ 
     render () { 
         return(
             <React.Fragment>

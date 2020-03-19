@@ -1,33 +1,32 @@
 {
-    "routes": {
-      "store/eduardo": {
-        "path": "/eletrodomesticos/eduardo"
+  "routes": {
+    "store/lava-loucas": {
+      "path": "/eletrodomesticos/lava-loucas"
+    }
+  },
+  "pages": {
+    "store/lava-loucas": [
+      {
+        "name": "Brastemp",
+        "template": "lava-loucas"
       }
-    },
-    "pages": {
-      "store/eduardo": [
-        {
-          "name": "Brastemp",
-          "template": "eduardo"
-        }
-      ]
-    },
-    "templates": {
-      "eduardo": {
-        "component": "Index",
-        "extensions": {
-          "header": {
-            "component": "brastemp.header/Header"
-          },
-          "footer": {
-            "component": "brastemp.footer/Footer"
-          }
+    ]
+  },
+  "templates": {
+    "lava-loucas": {
+      "component": "Index",
+      "extensions": {
+        "header": {
+          "component": "brastemp.header/Header"
         },
-        "props": {
-          "title": "Máquina de lavar louça: Lava Louças | Brastemp",
-          "description": "Encontre diversos modelos de máquina de lavar louça no site da Brastemp. Lava louças Brastemp 8 serviços e mais. Saiba tudo sobre lavadoras Brastemp!"
+        "footer": {
+          "component": "brastemp.footer/Footer"
         }
+      },
+      "props": {
+        "title": "Lava e Seca | Encontre sua Máquina Lava e Seca | Brastemp",
+        "description": "A lava e seca Brastemp é o modelo ideal para sua casa ou negócio. Confira as vantagens da melhor máquina lava e seca do mercado e compre online agora!"
       }
     }
   }
-
+}

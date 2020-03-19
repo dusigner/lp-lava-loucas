@@ -1,9 +1,67 @@
 .programas-lavagem {
-    background: black;
-    padding-top: 28px;
-    padding-bottom: 50px;
+    background: url('https://res.cloudinary.com/brastempwebp/image/upload/q_auto:best/v1584622952/2020-lava-loucas/bg-pgms_mycbtc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 5px;
 }
-.slide__design .slide__design-icons {
+.programas-lavagem .small {
+    color: white;
+    display: none;
+}
+/** SLIDER */
+.slider__lavagem {
+    width: 100%;
+    margin: 54px auto;
+}
+.slider__lavagem .slick-prev {
+    left: 45px;
+    
+}
+.slider__lavagem .slick-next {
+    right: 45px;
+}
+.slider__lavagem .slick-prev, 
+.slider__lavagem .slick-next {
+    top: 13%;
+    z-index: 2;
+    width:18px;
+    height:35px;
+}
+.slider__lavagem .slick-next::before,
+.slider__lavagem .slick-prev::before  {
+    content: '';
+    width:18px;
+    height:35px;
+    content: '';
+    display: block;
+}
+.slider__lavagem .slick-next::before {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAxOCAzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUwxNyAxN0wxIDMzIiBzdHJva2U9IiNGMDhCMUQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==")
+}
+.slider__lavagem .slick-prev::before {
+    transform: rotate(180deg);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAxOCAzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMUwxNyAxN0wxIDMzIiBzdHJva2U9IiNGMDhCMUQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==")
+}
+/*wrapper*/
+.slide__lavagem-flex {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.slide__lavagem-text p,
+.slide__lavagem-text h3{
+    text-align: center;
+
+    font-family: Soleto;
+    font-style: normal;
+    color: #FFFFFF;
+}
+/*icons*/
+.slide__lavagem .slide__lavagem-icons {
+    min-width: 172px;
+    min-height: 106px;
     width: 172px;
     height: 106px;
     background: rgba(255, 255, 255, 0.1);
@@ -15,26 +73,22 @@
     margin: 0 auto;
     border-radius: 7px;
 }
-/** SLIDER */
-.programas-lavagem .slick-track .slick-slide:first-child .slide__design{
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: -15px;
-    margin-right: -15px;
+/*txts*/
+.slide__lavagem-flex h3{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 27px;
+    margin: 23px 0 16px 0;
 }
-.programas-lavagem .slick-track .slick-slide .slide__design{
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: -15px;
-    margin-right: -15px;
+.slide__lavagem-flex p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
 }
-.programas-lavagem .slick-track .slick-slide:last-child .slide__design{
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/*dots*/
 .programas-lavagem .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: -35px;
     display: block;
     width: 100%;
     padding: 0;
@@ -60,7 +114,6 @@
     cursor: pointer;
     border: 0;
     outline: none;
-    background: black;
     position: relative;
 }
 .programas-lavagem .slick-dots li.slick-active button {
@@ -99,63 +152,35 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-.slide__design .effect__hover {
-    overflow: hidden;
-    width: 100%;
-    cursor: pointer;
-    
-}
-.slide__design .effect__hover img {
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: all .25s;
-    transition: all .25s;
-}
-
-.slide__design:hover .effect__hover img{
-    -webkit-transform: scale(1.09);
-	transform: scale(1.09);
-}
-
-.slide__design caption {
-    position: absolute;
-    font-family: Soleto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 153.2%;
-    background: #FFFFFF;
-    padding: 5px;
-    bottom: 15px;
-    left: 19px;
-}
-.slide__design caption::after {
-    content: "";
-    width: 100%;
-    background: linear-gradient(91.38deg, #F08B1D 49.94%, #DB882A 136.63%);
-    height: 4px;
-    display: flex;
-    bottom: 0;
-    position: absolute;
-    left: 0;
-}
-.slide__design p {
-    font-family: Soleto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 27px;
-    
-    color: #FFFFFF;
-    text-align: left;
-}
-
-.slider__design {
-    max-width: 1287px;
-    margin: 50px auto 0px auto;
-}
-
 @media (min-width: 1024px) {
+    .programas-lavagem {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    .programas-lavagem .small {
+        display: block;
+    }
+    .slider__lavagem {
+        width: 915px;
+        margin: 114px auto;
+    }
+    .slide__lavagem-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    .slide__lavagem-text {
+        width: 150px;
+        margin: 0 auto;
+    }
     
+    .programas-lavagem .slick-slide > div:first-child {
+        display: flex;
+        margin-bottom: 100px;
+    }
+    .slide__lavagem-text p,
+    .slide__lavagem-text h3{
+        text-align: left;
+    }
 }

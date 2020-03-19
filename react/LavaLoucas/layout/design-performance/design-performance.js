@@ -113,35 +113,37 @@ class DesignPerformance extends React.Component {
                     *Conforme certificação da Regulação Européia EC 1059/2010
                     </small>
                 </p>
-                <Slider className="slider slider__design" {...settings__design}>
-                    <div className="slide__design" style={{ width: 100 }}>
-                        <picture className="featured__image-container border">
-                            <caption>Economia de tempo</caption>
-                            <div className="effect__hover">
-                                <img src={cicloTiraManchasFeaturedImageCanetinha}  title="Economia de tempo"/> 
-                            </div>
-                        </picture>
-                        <p>A lava-louças faz todo o trabalho para que você aproveite os momentos que realmente importam. Passar mais tempo com a família e ter a certeza de que a máquina fará todo o trabalho com uma performance impecável.</p>
-                    </div>
-                    <div className="slide__design" style={{ width: 90 }}>
-                        <picture className="featured__image-container border">
-                            <caption>Praticidade</caption>
-                            <div className="effect__hover">
-                                <img src={cicloTiraManchasFeaturedImageGordura}  title="Praticidade"/>
-                            </div>
-                        </picture>
-                        <p>A lava-louças Brastemp possui até 5 ciclos para suprir a todas as suas necessidades, além de economizar água e energia para sua casa. Ao selecionar o ciclo correto de lavagem para cada necessidade é possível economizar até 6x mais de água do que a lavagem manual.</p>
-                    </div>
-                    <div className="slide__design" style={{ width: 100 }}>
-                        <picture className="featured__image-container border">
-                            <caption>Higiene e proteção</caption>
-                            <div className="effect__hover">
-                                <img src={cicloTiraManchasFeaturedImageGordura}  title="Higiene e proteção"/>
-                            </div>
-                        </picture>
-                        <p>Precisa de um texto pra esse beneficio. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </div>
-                </Slider>
+                <div id="beneficios" className="section">
+                    <Slider className="slider slider__design" {...settings__design}>
+                        <div className="slide__design" style={{ width: 100 }}>
+                            <figure className="featured__image-container border">
+                                <figcaption>Economia de tempo</figcaption>
+                                <div className="effect__hover">
+                                    <img src={cicloTiraManchasFeaturedImageCanetinha}  title="Economia de tempo"/> 
+                                </div>
+                            </figure>
+                            <p>A lava-louças faz todo o trabalho para que você aproveite os momentos que realmente importam. Passar mais tempo com a família e ter a certeza de que a máquina fará todo o trabalho com uma performance impecável.</p>
+                        </div>
+                        <div className="slide__design" style={{ width: 90 }}>
+                            <figure className="featured__image-container border">
+                                <figcaption>Praticidade</figcaption>
+                                <div className="effect__hover">
+                                    <img src={cicloTiraManchasFeaturedImageGordura}  title="Praticidade"/>
+                                </div>
+                            </figure>
+                            <p>A lava-louças Brastemp possui até 5 ciclos para suprir a todas as suas necessidades, além de economizar água e energia para sua casa. Ao selecionar o ciclo correto de lavagem para cada necessidade é possível economizar até 6x mais de água do que a lavagem manual.</p>
+                        </div>
+                        <div className="slide__design" style={{ width: 100 }}>
+                            <figure className="featured__image-container border">
+                                <figcaption>Higiene e proteção</figcaption>
+                                <div className="effect__hover">
+                                    <img src={cicloTiraManchasFeaturedImageGordura}  title="Higiene e proteção"/>
+                                </div>
+                            </figure>
+                            <p>Precisa de um texto pra esse beneficio. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </Slider>
+                </div>
             </div>
         )
     }
