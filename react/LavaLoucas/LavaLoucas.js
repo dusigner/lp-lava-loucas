@@ -12,6 +12,7 @@ import SliderDesignPerformance from "./components/sliderDesignPerformance/slider
 // Layouts
 import DesignPerformance from './layout/design-performance/design-performance';
 import ProgamasLavagem from './layout/programas-lavagem/programas-lavagem';
+import Videos from './layout/videos/videos';
 
 
 class LavaLoucas extends React.Component {
@@ -110,6 +111,7 @@ class LavaLoucas extends React.Component {
 				</Modal>
 
 				<ProgamasLavagem />
+				<Videos />
 			</div>
 		) }
 	}

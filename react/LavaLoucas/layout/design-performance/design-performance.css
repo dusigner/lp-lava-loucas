@@ -1,7 +1,7 @@
 .design-performance {
     background: black;
-    padding-top: 28px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 3px;
 }
 .design-performance p small {
     font-family: Soleto;
@@ -29,6 +29,10 @@
 }
 .design-performance .featured__image-container {
     margin: 0;
+}
+#beneficios {
+    padding-top: 20px;
+    background: black;
 }
 .design-performance .picture__effects picture {
     text-align: center;

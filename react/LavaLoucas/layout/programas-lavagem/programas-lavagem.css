@@ -9,6 +9,13 @@
 .programas-lavagem .small {
     color: white;
     display: none;
+    font-family: Soleto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 9px;
+    text-align: center;
+    
 }
 /** SLIDER */
 .slider__lavagem {

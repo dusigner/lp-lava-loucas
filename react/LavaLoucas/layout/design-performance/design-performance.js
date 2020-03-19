@@ -49,70 +49,73 @@ class DesignPerformance extends React.Component {
 		};
 
         return (
-            <div id="design-performance" className="design-performance section">
+            <div>
+                <div id="design-performance" className="design-performance section">
 
-                <Title setClass="center" textMF="Design &" textMS="Perfomance" textDF="Design & Perfomance"/>
+                    <Title setClass="center" textMF="Design &" textMS="Perfomance" textDF="Design & Perfomance"/>
 
-                <p className="none__mobile">A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
-                
-                <div className="wrap-buttons">
+                    <p className="none__mobile">A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
                     
-                    <span 
-                        onClick = { e => {
+                    <div className="wrap-buttons">
+                        
+                        <span 
+                            onClick = { e => {
+                                this.props.openModal();
+                                this.props.changeSlide(0);
+                                } 
+                            } data-tag="painel-multifuncional">
+                            <Button setClass="not_responsive" label="Painel Touch"/>
+                        </span>
+                        <span onClick={e => {
+                            this.props.openModal(); 
+                            this.props.changeSlide(1);
+                            }} data-tag="soft-close">
+                            <Button setClass="not_responsive" label="Gaveta de Talheres" />
+                        </span>
+                        <span onClick={e => {
                             this.props.openModal();
-                            this.props.changeSlide(0);
-                            } 
-                        } data-tag="painel-multifuncional">
-                        <Button setClass="not_responsive" label="Painel Touch"/>
-                    </span>
-                    <span onClick={e => {
-                        this.props.openModal(); 
-                        this.props.changeSlide(1);
-                        }} data-tag="soft-close">
-                        <Button setClass="not_responsive" label="Gaveta de Talheres" />
-                    </span>
-                    <span onClick={e => {
-                        this.props.openModal();
-                        this.props.changeSlide(3);
+                            this.props.changeSlide(3);
+                            
+                            }} data-tag="identificador-de-etapas">
+                            <Button setClass="not_responsive" label="Identificador de Etapas" />
+                        </span>
+                        <span onClick={e => {
+                            this.props.openModal();
+                            this.props.changeSlide(2);
+                            
+                            }} data-tag="cesto-flexivel">
+                            <Button setClass="not_responsive" label="Cesto Flexível" />
+                        </span>
                         
-                        }} data-tag="identificador-de-etapas">
-                        <Button setClass="not_responsive" label="Identificador de Etapas" />
-                    </span>
-                    <span onClick={e => {
-                        this.props.openModal();
-                        this.props.changeSlide(2);
-                        
-                        }} data-tag="cesto-flexivel">
-                        <Button setClass="not_responsive" label="Cesto Flexível" />
-                    </span>
-                    
-                </div>
-                <div className="picture__effects">
-                    <Picture
-                        
-                        sources = {[
-                            {srcSet: imgSmallPng,    media: "(max-width: 555px)",    type: "image/png"},
-                            {srcSet: imgMediumPng,    media: "(max-width: 1366px)",    type: "image/png"},
-                            {srcSet: imgLargerPng,    media: "(min-width: 1367px)",    type: "image/png"},
-        
-                            {srcSet: imgSmallWebp,    media: "(max-width: 555px)",    type: "image/webp"},
-                            {srcSet: imgMediumWebp,    media: "(max-width: 1366px)",    type: "image/webp"},
-                            {srcSet: imgLargerWebp,    media: "(min-width: 1367px)",    type: "image/webp"},
-                        ]}
-                    />
-                </div>
+                    </div>
+                    <div className="picture__effects">
+                        <Picture
+                            
+                            sources = {[
+                                {srcSet: imgSmallPng,    media: "(max-width: 555px)",    type: "image/png"},
+                                {srcSet: imgMediumPng,    media: "(max-width: 1366px)",    type: "image/png"},
+                                {srcSet: imgLargerPng,    media: "(min-width: 1367px)",    type: "image/png"},
+            
+                                {srcSet: imgSmallWebp,    media: "(max-width: 555px)",    type: "image/webp"},
+                                {srcSet: imgMediumWebp,    media: "(max-width: 1366px)",    type: "image/webp"},
+                                {srcSet: imgLargerWebp,    media: "(min-width: 1367px)",    type: "image/webp"},
+                            ]}
+                        />
+                    </div>
 
-                <p className="small">
-                    <small> 
-                    A lava-louças Brastemp alcançou o nível A de performance de lavagem, 
-                    segundo a regulação mais rígida do mundo*
-                    </small>
-                </p> 
-                <p className="small">
-                    <small>
-                    *Conforme certificação da Regulação Européia EC 1059/2010
-                    </small>
-                </p>
+                    <p className="small">
+                        <small> 
+                        A lava-louças Brastemp alcançou o nível A de performance de lavagem, 
+                        segundo a regulação mais rígida do mundo*
+                        </small>
+                    </p> 
+                    <p className="small">
+                        <small>
+                        *Conforme certificação da Regulação Européia EC 1059/2010
+                        </small>
+                    </p>
+                
+                </div>
                 <div id="beneficios" className="section">
                     <Slider className="slider slider__design" {...settings__design}>
                         <div className="slide__design" style={{ width: 100 }}>

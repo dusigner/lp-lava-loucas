@@ -40,7 +40,7 @@ class programasLavagem extends React.Component {
                         infinite: false,
                         slidesToShow: 1,
                         centerMode: true,
-                        centerPadding: "60px",
+                        centerPadding: "40px",
                         rows: 1,
                         slidesPerRow: 1,
 					}
