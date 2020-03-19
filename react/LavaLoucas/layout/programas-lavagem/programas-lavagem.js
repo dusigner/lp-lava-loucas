@@ -51,7 +51,7 @@ class programasLavagem extends React.Component {
         return (
             <div id="programas-lavagem" className="programas-lavagem section">
 
-                <Title setClass="center" textMF="Programas de" textMS="lavagem" textDF="Programas de lavagem"/>
+                <Title setClass="center" SetTxtMobileRow1="Programas de" SetTxtMobileRow2="lavagem" SetTxtDesktopRow1="Programas de lavagem"/>
 
                 <Slider className="slider slider__lavagem" {...settings__lavagem}>
                     <div className="slide__lavagem" style={{ width: 100 }}>

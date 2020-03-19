@@ -3,47 +3,65 @@ import ReactDOM from 'react-dom';
 
 export default props => {
     
-    var txtmf = props.textMF,
-        txtms = props.textMS,
-        txtdf = props.textDF,
-        txtds = props.textDS,
-        markupM,
-        markupD;
+    var txtMobileRow1 = props.SetTxtMobileRow1,
+        txtMobileRow2 = props.SetTxtMobileRow2,
+        txtMobileRow3 = props.SetTxtMobileRow3 ,
+        txtDesktopRow1 = props.SetTxtDesktopRow1,
+        txtDesktopRow2 = props.SetTxtDesktopRow2,
+        markupMobileLines,
+        markupDesktopLines;
 
-    txtmf != undefined && txtms != undefined
-    ? markupM = (
-        <span className="mobile">
-            <h2>{txtmf}</h2>
-            <br></br>
-            <h2>{txtms}</h2>
-        </span>
-    )
-    : markupM = (
-        <span className="mobile">
-            <h2>{txtmf}</h2>
-        </span>
-    )
+            /* Mobile */
 
-    txtdf != undefined && txtds != undefined
-    ? markupD = (
-        <span className="desktop">
-            <h2>{txtdf}</h2>
-            <br></br>
-            <h2>{txtds}</h2>
-        </span>
-    )
-    : markupD = (
-        <span className="desktop">
-            <h2>{txtdf}</h2>
-        </span>
-    )
+        if (txtMobileRow1 != undefined && txtMobileRow2 != undefined && txtMobileRow3 != undefined){
+            markupMobileLines = (
+                <span className="mobile">
+                    <h2>{txtMobileRow1}</h2>
+                    <br></br>
+                    <h2>{txtMobileRow2}</h2>
+                    <br></br>
+                    <h2>{txtMobileRow3}</h2>
+                </span>
+            )
+        }else if (txtMobileRow1 != undefined && txtMobileRow2 != undefined && txtMobileRow3 == undefined) {
+            markupMobileLines = (
+                <span className="mobile">
+                    <h2>{txtMobileRow1}</h2>
+                    <br></br>
+                    <h2>{txtMobileRow2}</h2>
+                </span>
+            )
+        } else {
+            markupMobileLines = (
+                <span className="mobile">
+                    <h2>{txtMobileRow1}</h2>
+                </span>
+            )
+        }
 
+        /* Desktop */
 
+        if (txtDesktopRow1 != undefined && txtDesktopRow2 != undefined){
+            markupDesktopLines = (
+                <span className="desktop">
+                    <h2>{txtDesktopRow1}</h2>
+                    <br></br>
+                    <h2>{txtDesktopRow2}</h2>
+                </span>
+            )
+        }else {
+            markupDesktopLines = (
+                <span className="desktop">
+                    <h2>{txtDesktopRow1}</h2>
+                </span>
+            )
+        }
+      
     
     return (
         <div className={`${props.setClass} edge-title`}>
-                { markupM }
-                { markupD }
+                { markupMobileLines }
+                { markupDesktopLines }
         </div>
     )
 }

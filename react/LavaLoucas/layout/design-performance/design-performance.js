@@ -52,7 +52,7 @@ class DesignPerformance extends React.Component {
             <div>
                 <div id="design-performance" className="design-performance section">
 
-                    <Title setClass="center" textMF="Design &" textMS="Perfomance" textDF="Design & Perfomance"/>
+                    <Title setClass="center" SetTxtMobileRow1="Design &" SetTxtMobileRow2="Perfomance" SetTxtDesktopRow1="Design & Perfomance"/>
 
                     <p className="none__mobile">A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
                     
