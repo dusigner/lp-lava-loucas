@@ -120,7 +120,7 @@ class Videos extends React.Component {
 			arrow: false,
             autoplay: false,
             fade: false,
-			infinite: false,
+			infinite: true,
 			slidesToShow: 1,
             centerMode: false,
             responsive: [
@@ -134,6 +134,7 @@ class Videos extends React.Component {
                         slidesToShow: 1,
                         centerMode: false,
                         centerPadding: "50px",
+                        fade: false,
 					}
 				}
             ],
@@ -179,10 +180,15 @@ class Videos extends React.Component {
 			dots: false,
 			arrow: false,
 			autoplay: false,
-			infinite: false,
-			slidesToShow: 2,
+			infinite: true,
 			centerMode: false,
             centerPadding: "20px",
+            vertical: true,
+            verticalSwiping: true,
+			slidesToShow: 6,
+            swipeToSlide: "true",
+            focusOnSelect: "true",
+  
             responsive: [
 				{
 					breakpoint: 767,
@@ -193,6 +199,7 @@ class Videos extends React.Component {
                         infinite: false,
                         slidesToShow: 1,
                         centerMode: false,
+                        vertical: false,
 					}
 				}
 			]
@@ -208,16 +215,35 @@ class Videos extends React.Component {
                     <Slider
                         className="slider__videos-nav" 
 
-                        asNavFor={this.state.nav1}
-                        ref={slider => (this.slider2 = slider)}
+                        asNavFor={this.state.nav2}
+                        ref={slider => (this.slider1 = slider)}
+
+                       
                         {...settings__videosButtons}
+                        
                         >
                         <div className="slide__videos-buttons">
-                            <Button setClass="not_responsive yes_slider" label="Cesto Flexível" />
+                            <Button setClass="not_responsive yes_slider" label="Como funciona" />
                             <p>A lava-louças faz todo o trabalho para que você aproveite os momentos.</p>
                         </div>
                         <div className="slide__videos-buttons">
-                            <Button setClass="not_responsive yes_slider" label="Cesto Flexível" />
+                            <Button setClass="not_responsive yes_slider" label="Como abastecer" />
+                            <p>A lava-louças faz todo o trabalho para que você aproveite os momentos.</p>
+                        </div>
+                        <div className="slide__videos-buttons">
+                            <Button setClass="not_responsive yes_slider" label="Economia de tempo" />
+                            <p>A lava-louças faz todo o trabalho para que você aproveite os momentos.</p>
+                        </div>
+                        <div className="slide__videos-buttons">
+                            <Button setClass="not_responsive yes_slider" label="Economia de água e energia" />
+                            <p>A lava-louças faz todo o trabalho para que você aproveite os momentos.</p>
+                        </div>
+                        <div className="slide__videos-buttons">
+                            <Button setClass="not_responsive yes_slider" label="Higiene" />
+                            <p>A lava-louças faz todo o trabalho para que você aproveite os momentos.</p>
+                        </div>
+                        <div className="slide__videos-buttons">
+                            <Button setClass="not_responsive yes_slider" label="Antes e depois" />
                             <p>A lava-louças faz todo o trabalho para que você aproveite os momentos.</p>
                         </div>
                         
@@ -226,19 +252,22 @@ class Videos extends React.Component {
                     <Slider 
                         className="slider slider__videos" 
 
-                        asNavFor={this.state.nav2} 
-                        ref={slider => (this.slider1 = slider)} 
+                        asNavFor={this.state.nav1}
+                        ref={slider => (this.slider2 = slider)}
 
                         {...settings__videos}
                     >   
                         <div className="slide__videos-video">
+                                <p>01 A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
                                 <div className="slide__videos-border">
                                 </div>
                                 <video id="video0" muted="muted" className="observerVideo" name="videoTeste" width="100%" height="100%"  >
+                                
                                     <source src="https://res.cloudinary.com/brastempwebp/video/upload/v1583171720/2020-lavadora-edge/BRASTEMP_LAVADORA_ROUPAS_LINHA_F11_boaqualidade_yqee4q.mp4" type="video/mp4"></source>
                                 </video>
                         </div>
                         <div className="slide__videos-video">
+                                <p>02 A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
                                 <div className="slide__videos-border">
                                 </div>
                                 <video id="video1" muted="muted" className="observerVideo" name="videoTeste" width="100%" height="100%" >
@@ -246,6 +275,7 @@ class Videos extends React.Component {
                                 </video>
                         </div>
                         <div className="slide__videos-video">
+                                <p>03 A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
                                 <div className="slide__videos-border">
                                 </div>
                                 <video id="video2" muted="muted" className="observerVideo" name="videoTeste" width="100%" height="100%"  >
@@ -253,6 +283,7 @@ class Videos extends React.Component {
                                 </video>
                         </div>
                         <div className="slide__videos-video">
+                                <p>04 A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
                                 <div className="slide__videos-border">
                                 </div>
                                 <video id="video3" muted="muted" className="observerVideo" name="videoTeste" width="100%" height="100%" >
@@ -260,6 +291,15 @@ class Videos extends React.Component {
                                 </video>
                         </div>
                         <div className="slide__videos-video">
+                                <p>05 A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
+                                <div className="slide__videos-border">
+                                </div>
+                                <video id="video4" muted="muted" className="observerVideo" name="videoTeste" width="100%" height="100%"  >
+                                    <source src="https://res.cloudinary.com/brastempwebp/video/upload/v1583171720/2020-lavadora-edge/BRASTEMP_LAVADORA_ROUPAS_LINHA_F11_boaqualidade_yqee4q.mp4" type="video/mp4"></source>
+                                </video>
+                        </div>
+                        <div className="slide__videos-video">
+                                <p>06 A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
                                 <div className="slide__videos-border">
                                 </div>
                                 <video id="video4" muted="muted" className="observerVideo" name="videoTeste" width="100%" height="100%"  >

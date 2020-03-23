@@ -48,7 +48,6 @@
     content: unset;
 }
 .slide__videos-buttons p {
-    font-family: Soleto;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -139,12 +138,94 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.slide__videos-video p {
+    display: none;
+
+}
 @media (min-width: 1024px) {
     .videos {
         padding-top: 82px;
+        padding-bottom: 100px;
     }
-    .slider__videos {
-        width: 924px;
+    .videos .slider__grid {
         margin: 0 auto;
+        width: 924px;
+        position: relative;
+    }
+    .slick-slider.slider__videos-nav {
+        position: absolute;
+        z-index: 4;
+        width: 270px;
+        right: -121px;
+        top: 34%;
+        height: 265px;
+    }
+    .slider__videos-nav p{
+        display: none;
+    }
+    .slider__videos-nav .yes_slider i {
+        display: flex;
+    }
+    .slider__videos-nav .yes_slider {
+        width: auto;
+    }
+    .slider__videos-nav .btn a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .videos .slider__videos {
+        padding-bottom: initial;
+    }
+    .videos .slider__videos .slick-arrow{
+        display: none !important;
+
+    }
+    .slide__videos-video {
+        padding: 10px;
+    }
+    .slide__videos-video p {
+        display: block;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+    .slide__videos-video .slide__videos-border {
+        width: 97.9%;
+        height: 83.2%;
+        left: 14px;
+        top: 97px;
+    }
+    .slider__videos-nav .yes_slider::before {
+        content: "";
+    }
+    .videos .not_responsive {
+        margin: 0;
+        border: 1px solid #222222;
+        background: rgba(0, 0, 0, 0.75);
+        width: 100%;
+    }
+    .videos .slider__videos-nav .btn a {
+        justify-content: left;
+        position: relative;
+        z-index: 4;
+    }
+    .slider__videos-nav .slick-current .yes_slider::before {
+        content: "";
+        background: linear-gradient(135deg, #F08B1D 0%, #DB532A 100%);
+        width: 100%;
+        animation: in .3s ease-in-out forwards;
+    }
+    .slider__videos-nav .slick-current .btn i{
+        transform:rotate(90deg);
+        box-shadow: none;
+        background: none;
     }
 }
