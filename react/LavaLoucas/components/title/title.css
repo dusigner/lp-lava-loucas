@@ -1,14 +1,14 @@
-.edge-title.left {
+.title__wrap.left {
     text-align: left;
 }
-.edge-title.center {
+.title__wrap.center {
     text-align: center;
 }
-.edge-title.right {
+.title__wrap.right {
     text-align: right;
 }
 
-.edge-title h2 {
+.title__wrap h2 {
     font-family: Soleto,sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -25,7 +25,7 @@
     color: #000;
 }
 
-.edge-title span h2:last-child::before {
+.title__wrap span h2:last-child::before {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -35,30 +35,30 @@
     background: linear-gradient(93.22deg, #F08B1D 49.94%, #DB882A 136.63%);
 }
 
-.edge-title .mobile {
+.title__wrap .mobile {
     display: block;
 }
 
-.edge-title .desktop {
+.title__wrap .desktop {
     display: none;
 }
 
 @media (min-width: 768px) {
 
-    .edge-title h2 {
+    .title__wrap h2 {
         font-size: 48px;
         line-height: 82px;
     }
 
-    .edge-title span h2:last-child::before {
+    .title__wrap span h2:last-child::before {
         height: 10px;
         bottom: -10px;
     }
 
-    .edge-title .mobile {
+    .title__wrap .mobile {
         display: none;
     }
-    .edge-title .desktop {
+    .title__wrap .desktop {
         display: block;
     }
 }

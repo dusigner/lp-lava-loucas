@@ -59,7 +59,7 @@ export default props => {
       
     
     return (
-        <div className={`${props.setClass} edge-title`}>
+        <div className={`${props.setClass} title__wrap`}>
                 { markupMobileLines }
                 { markupDesktopLines }
         </div>

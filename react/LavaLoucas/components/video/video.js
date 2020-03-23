@@ -97,7 +97,7 @@ class Video extends React.Component {
 
     render() {
         return (
-            <video id="myVideo" className="video" width="100%" height="100%" muted controls>
+            <video id="myVideo" className="video" width="100%" height="100%"  muted={this.props.setMuted} controls={this.props.setControls}>
                 <source src={this.props.setSrc} type="video/mp4"></source>
             </video>
         )
