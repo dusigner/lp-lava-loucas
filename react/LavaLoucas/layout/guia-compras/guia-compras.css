@@ -1,0 +1,16 @@
+.guia__compras {
+    padding: 100px 34px
+}
+.guia__compras p.description {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+    margin: 25px 0;
+    padding: 0 30px;
+
+    color: #000000;
+}
