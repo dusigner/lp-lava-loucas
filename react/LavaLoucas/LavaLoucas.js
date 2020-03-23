@@ -13,6 +13,7 @@ import SliderDesignPerformance from "./components/sliderDesignPerformance/slider
 import DesignPerformance from './layout/design-performance/design-performance';
 import ProgamasLavagem from './layout/programas-lavagem/programas-lavagem';
 import Videos from './layout/videos/videos';
+import GuiaCompras from './layout/guia-compras/guia-compras';
 
 
 class LavaLoucas extends React.Component {
@@ -102,6 +103,7 @@ class LavaLoucas extends React.Component {
 					DESTAQUE
 					<br/><br/><br/>
 				</div>
+				<GuiaCompras />
 				<DesignPerformance openModal={this.showModal1} changeSlide={this.changeSlide} />
 				<Modal 
 					setClass="slider" 
@@ -112,6 +114,7 @@ class LavaLoucas extends React.Component {
 
 				<ProgamasLavagem />
 				<Videos />
+				
 			</div>
 		) }
 	}
