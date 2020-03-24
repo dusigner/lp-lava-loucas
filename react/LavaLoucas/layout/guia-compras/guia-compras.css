@@ -17,6 +17,18 @@
 .guia__compras .acoordion__mobile {
     display: block;
 }
+
+.slider__guia-grid {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    max-width: 1272px;
+    margin: 0 auto;
+}
+.slider__guia-txt {
+    background: #F8F8F8;
+    border: 1px solid #DADADA;
+    padding: 43px 62px;
+}
 @media (min-width: 1024px) {
     .guia__compras .acoordion__mobile {
         display: none;
