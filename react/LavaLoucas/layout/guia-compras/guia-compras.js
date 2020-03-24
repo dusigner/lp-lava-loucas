@@ -10,7 +10,7 @@ class guiaCompras extends React.Component {
                 <Title setClass="center" SetTxtMobileRow1="Guia de Compras" SetTxtDesktopRow1="Guia de Compras"/>
                 
                 <p className="description">A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
-                <Accordion>
+                <Accordion setClass="acoordion__mobile">
                     <div label="Serviços">
                         
                         <p>
@@ -31,11 +31,11 @@ class guiaCompras extends React.Component {
                             convidados em sua casa e o quanto de pessoas são, na média. Veja a tabela abaixo: 
                         </p>
                         <ul>
-                            Até 6 pessoas: 6 serviços 
-                            Entre 6 e 8 pessoas: 8 serviços 
-                            Entre 8 e 10 pessoas: 10 serviços 
-                            Entre 10 e 12 pessoas: 12 serviços 
-                            Entre 12 e 14 pessoas: 14 serviços
+                            <li>Até 6 pessoas: 6 serviços </li>
+                            <li>Entre 6 e 8 pessoas: 8 serviços </li>
+                            <li>Entre 8 e 10 pessoas: 10 serviços </li>
+                            <li>Entre 10 e 12 pessoas: 12 serviços </li>
+                            <li>Entre 12 e 14 pessoas: 14 serviços</li>
                         </ul>
                         
                     </div>
@@ -58,11 +58,11 @@ class guiaCompras extends React.Component {
                             convidados em sua casa e o quanto de pessoas são, na média. Veja a tabela abaixo: 
                         </p>
                         <ul>
-                            Até 6 pessoas: 6 serviços 
-                            Entre 6 e 8 pessoas: 8 serviços 
-                            Entre 8 e 10 pessoas: 10 serviços 
-                            Entre 10 e 12 pessoas: 12 serviços 
-                            Entre 12 e 14 pessoas: 14 serviços
+                            <li>Até 6 pessoas: 6 serviços </li>
+                            <li>Entre 6 e 8 pessoas: 8 serviços </li>
+                            <li>Entre 8 e 10 pessoas: 10 serviços </li>
+                            <li>Entre 10 e 12 pessoas: 12 serviços </li>
+                            <li>Entre 12 e 14 pessoas: 14 serviços</li>
                         </ul>
                     </div>
                     <div label="Dimensões">
@@ -84,11 +84,11 @@ class guiaCompras extends React.Component {
                             convidados em sua casa e o quanto de pessoas são, na média. Veja a tabela abaixo: 
                         </p>
                         <ul>
-                            Até 6 pessoas: 6 serviços 
-                            Entre 6 e 8 pessoas: 8 serviços 
-                            Entre 8 e 10 pessoas: 10 serviços 
-                            Entre 10 e 12 pessoas: 12 serviços 
-                            Entre 12 e 14 pessoas: 14 serviços
+                            <li>Até 6 pessoas: 6 serviços </li>
+                            <li>Entre 6 e 8 pessoas: 8 serviços </li>
+                            <li>Entre 8 e 10 pessoas: 10 serviços </li>
+                            <li>Entre 10 e 12 pessoas: 12 serviços </li>
+                            <li>Entre 12 e 14 pessoas: 14 serviços</li>
                         </ul>
                     </div>
             </Accordion>

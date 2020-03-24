@@ -14,3 +14,22 @@
 
     color: #000000;
 }
+.guia__compras .acoordion__mobile {
+    display: block;
+}
+@media (min-width: 1024px) {
+    .guia__compras .acoordion__mobile {
+        display: none;
+    }
+    .guia__compras p.description {
+        width: 688px;
+        margin: 40px auto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+
+        color: #000000;
+    }
+}
