@@ -31,8 +31,8 @@ class AccordionSection extends Component {
         <div onClick={onClick} style={{ cursor: 'pointer' }}>
           {label}
           <div style={{ float: 'right' }}>
-            {!isOpen && <span><svg width='18' height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8.62695L8.92687 0.999834L16.8537 8.62695" stroke="#DB532A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>}
-            {isOpen && <span><svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7769 1L8.7248 8.62712L1.67274 1" stroke="#DB532A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>}
+            {!isOpen && <span><svg width='18' height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 8.62695L8.92687 0.999834L16.8537 8.62695" stroke="#DB532A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>}
+            {isOpen && <span><svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7769 1L8.7248 8.62712L1.67274 1" stroke="#DB532A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></span>}
           </div>
         </div>
         {isOpen && (

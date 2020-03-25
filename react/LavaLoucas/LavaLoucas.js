@@ -103,7 +103,6 @@ class LavaLoucas extends React.Component {
 					DESTAQUE
 					<br/><br/><br/>
 				</div>
-				<GuiaCompras />
 				<DesignPerformance openModal={this.showModal1} changeSlide={this.changeSlide} />
 				<Modal 
 					setClass="slider" 
@@ -114,6 +113,7 @@ class LavaLoucas extends React.Component {
 
 				<ProgamasLavagem />
 				<Videos />
+				<GuiaCompras />
 				
 			</div>
 		) }

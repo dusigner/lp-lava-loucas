@@ -19,17 +19,94 @@
 }
 
 .slider__guia-grid {
-    display: grid;
+    display: none;
     grid-template-columns: 38% 62%;
     max-width: 1272px;
     margin: 0 auto;
+    height: 661px;
+    box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid #DADADA;
 }
 .slider__guia-txt {
     background: #F8F8F8;
     border: 1px solid #DADADA;
     padding: 43px 62px;
+    overflow: hidden;
+    height: 659px;
+}
+.slider__guia-txt p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 153% */
+    
+    color: #000000;
+}
+.slider__guia-txt {
+    overflow-y: auto;
+}
+.slider__guia-txt ul {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 153% */
+    
+    color: #000000;
+    padding: 0;
+    list-style: none;
+}
+.slider__guia-txt h3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 80px;
+    /* or 250% */
+    color: #000000;
+    margin: 0;
+}
+.slider__guia-nav {
+    padding-left: 41px;
+    padding-top: 51px;
+}
+.slider__guia.slider__guia-nav .btn a {
+    justify-content: left;
+    position: relative;
+    z-index: 4;
+    color: white;
+}
+
+.slider__guia-nav .slick-current .yes_slider::before {
+    content: "";
+    background: linear-gradient(135deg, #F08B1D 0%, #DB532A 100%);
+    width: 100%;
+    animation: in .3s ease-in-out forwards;
+}
+.slider__guia-nav .slick-current .btn i{
+    transform:rotate(90deg);
+    box-shadow: none;
+    background: none;
+}
+.slider__guia-nav .btn {
+    background: transparent;
+    box-shadow:unset;
+    font-size: 22px;
+}
+.slider__guia-nav .btn a{
+    color: black;
+    font-weight: 300;
+}
+.slider__guia-nav .btn:hover a{
+    color: white;
+}
+.slider__guia-nav .slick-current .btn a {
+    color: white;
 }
 @media (min-width: 1024px) {
+    .guia__compras {
+        padding: 63px 34px;
+    }
     .guia__compras .acoordion__mobile {
         display: none;
     }
@@ -43,5 +120,8 @@
         text-align: center;
 
         color: #000000;
+    }
+    .slider__guia-grid {
+        display: grid;
     }
 }
