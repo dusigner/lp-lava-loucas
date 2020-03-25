@@ -92,6 +92,7 @@
     background: transparent;
     box-shadow:unset;
     font-size: 22px;
+    margin-bottom: 30px;
 }
 .slider__guia-nav .btn a{
     color: black;
