@@ -14,6 +14,7 @@ import DesignPerformance from './layout/design-performance/design-performance';
 import ProgamasLavagem from './layout/programas-lavagem/programas-lavagem';
 import Videos from './layout/videos/videos';
 import GuiaCompras from './layout/guia-compras/guia-compras';
+import Vitrine from "./layout/vitrine/vitrine";
 
 
 class LavaLoucas extends React.Component {
@@ -114,6 +115,7 @@ class LavaLoucas extends React.Component {
 				<ProgamasLavagem />
 				<Videos />
 				<GuiaCompras />
+				<Vitrine />
 				
 			</div>
 		) }

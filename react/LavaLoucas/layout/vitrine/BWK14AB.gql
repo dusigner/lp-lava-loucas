@@ -1,0 +1,32 @@
+query{
+    product(slug: "maquina-de-lavar-brastemp-14kg-branca-com-ciclo-tira-manchas-e-ciclo-antibolinha"){
+        productName
+        linkText
+        items{
+        referenceId{
+            Value
+        }
+        images{
+            imageUrl
+        }
+        sellers{
+            addToCartLink
+            sellerDefault
+            commertialOffer{
+            Price
+            ListPrice
+            Installments{
+                Value
+                InterestRate
+                TotalValuePlusInterestRate
+                NumberOfInstallments
+                PaymentSystemName
+                PaymentSystemGroupName
+                Name
+            }
+            }
+        }
+        
+        }
+    }
+}
