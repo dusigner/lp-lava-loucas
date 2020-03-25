@@ -93,7 +93,7 @@ class Vitrine extends React.Component {
         };
       
         StoredDatalayer.set(dataCategory);
-        this.datalayerCategory();
+        //this.datalayerCategory();
 
 
 
@@ -229,36 +229,37 @@ class Vitrine extends React.Component {
 
     }
 
-    datalayerCategory = () => {
-        const { searchQuery } = this.props;
+    // datalayerCategory = () => {
+    //     const { searchQuery } = this.props;
     
-        // ----- START - Read Products Objects
-        let tempDatalayer = StoredDatalayer.get()
-        let products = []
+    //     // ----- START - Read Products Objects
+    //     let tempDatalayer = StoredDatalayer.get()
+    //     let products = []
+    //     console.log(products);
     
-        if (tempDatalayer.event === 'updateImpressions') {
-          products = tempDatalayer.impressions || []
-        } else {
-          products = tempDatalayer.page.impressions || []
-        }
+    //     if (tempDatalayer.event === 'updateImpressions') {
+    //       products = tempDatalayer.impressions || []
+    //     } else {
+    //       products = tempDatalayer.page.impressions || []
+    //     }
     
-        tempDatalayer.step = `categoria/lavadora-edge`
+    //     tempDatalayer.step = `categoria/lavaloucas`
     
-        if (products.length && products.length >= (searchQuery.products.length - this.dispatchedData)) {
-            StoredDatalayer.dispatch();
+    //     if (products.length && products.length >= (searchQuery.products.length - this.dispatchedData)) {
+    //         StoredDatalayer.dispatch();
     
-              if (tempDatalayer.event && tempDatalayer.event === 'updateImpressions') {
-                this.currDatalayer = tempDatalayer.impressions || []
-              } else {
-                this.currDatalayer = tempDatalayer.page.impressions || []
-              }
-              this.dispatchedData = searchQuery.products.length
+    //           if (tempDatalayer.event && tempDatalayer.event === 'updateImpressions') {
+    //             this.currDatalayer = tempDatalayer.impressions || []
+    //           } else {
+    //             this.currDatalayer = tempDatalayer.page.impressions || []
+    //           }
+    //           this.dispatchedData = searchQuery.products.length
     
-        } else {
-              StoredDatalayer.interval(this.datalayerCategory);
-        }
-        // ----- End - Read Products Objects
-    }
+    //     } else {
+    //           StoredDatalayer.interval(this.datalayerCategory);
+    //     }
+    //     // ----- End - Read Products Objects
+    // }
     
 
     produtos = () => {
