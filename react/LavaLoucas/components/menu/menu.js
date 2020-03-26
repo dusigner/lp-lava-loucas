@@ -134,7 +134,7 @@ class Menu extends React.Component {
                             </AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink offset={() => 55} href='#assistencia-tecnica' className="links">
+                            <AnchorLink offset={() => 55} href='#assistencia' className="links">
                                 <span>Assistência técnica</span>
                             </AnchorLink>
                         </li>

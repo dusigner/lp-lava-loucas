@@ -1,3 +1,50 @@
 .assistencia {
     background: white;
 }
+.assistencia__grid {
+    display: flex;
+    flex-direction: column;
+    margin: 29px 20px;
+}
+.assistencia__grid-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 1px solid #E2E2E2;
+    padding: 24px;
+    margin: 24px 0;
+}
+.assistencia__grid-box .title__wrap h2 {
+    line-height: 42px;
+}
+.assistencia__grid-box .not_responsive {
+    box-shadow: unset;
+    margin: unset;
+}
+@media (min-width: 1024px){
+    .assistencia__grid {
+        flex-direction: row;
+        width: 1270px;
+        margin: 90px auto;
+    }
+    .assistencia__grid-box {
+        justify-content: flex-end;
+        height: 279px;
+    }
+    .assistencia__grid-box p {
+        margin: 24px 0 35px 0;
+    }
+    .assistencia__grid-box:first-child {
+        margin-right: 35px;
+    }
+    .assistencia__grid-box:last-child {
+        margin-left: 35px;
+    }
+    .assistencia__grid-box .title__wrap h2 {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .assistencia__grid-box .btn a {
+        font-size: 14px;
+    }
+}

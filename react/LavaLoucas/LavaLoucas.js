@@ -98,6 +98,7 @@ class LavaLoucas extends React.Component {
 				<Headroom disableInlineStyles>
 					<Menu />
 				</Headroom>
+				
 				<div id="destaque" className="section">
 					DESTAQUE
 					<br/><br/><br/>
