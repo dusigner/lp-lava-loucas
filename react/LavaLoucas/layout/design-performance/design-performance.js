@@ -54,7 +54,11 @@ class DesignPerformance extends React.Component {
 
                     <Title setClass="center" SetTxtMobileRow1="Design &" SetTxtMobileRow2="Perfomance" SetTxtDesktopRow1="Design & Perfomance"/>
 
-                    <p className="none__mobile">A combinação dos jatos precisos de água, alta temperatura e sabão concentrado fazem com que a máquina atinja resultados que não alcançamos na lavagem manual.</p>
+                    <p className="none__mobile">
+                        A combinação do jatos precisos de água, alta temperatura e sabão concentrado 
+                        fazem com que a Lava Louças Brastemp atinja resultados que não alcançamos na 
+                        lavagem manual. 
+                    </p>
                     
                     <div className="wrap-buttons">
                         
@@ -129,9 +133,9 @@ class DesignPerformance extends React.Component {
                         </div>
                         <div className="slide__design" style={{ width: 90 }}>
                             <figure className="featured__image-container border">
-                                <figcaption>Praticidade</figcaption>
+                                <figcaption>Economia de água</figcaption>
                                 <div className="effect__hover">
-                                    <img src={cicloTiraManchasFeaturedImageGordura}  title="Praticidade"/>
+                                    <img src={cicloTiraManchasFeaturedImageGordura}  title="Economia de água"/>
                                 </div>
                             </figure>
                             <p>A lava-louças Brastemp possui até 5 ciclos para suprir a todas as suas necessidades, além de economizar água e energia para sua casa. Ao selecionar o ciclo correto de lavagem para cada necessidade é possível economizar até 6x mais de água do que a lavagem manual.</p>
@@ -143,7 +147,7 @@ class DesignPerformance extends React.Component {
                                     <img src={cicloTiraManchasFeaturedImageGordura}  title="Higiene e proteção"/>
                                 </div>
                             </figure>
-                            <p>Precisa de um texto pra esse beneficio. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p>A Lava louças Brastemp possui jatos de água em alta temperatura e pressão que garantem a sanitização completa das louças. Além dos 6 ciclos de lavagem que permitem uma maior precisão na limpeza de taças à panelas.</p>
                         </div>
                     </Slider>
                 </div>

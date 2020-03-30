@@ -209,7 +209,7 @@ class Videos extends React.Component {
             <div id="videos" className="videos section">
 
                 <Title setClass="center" SetTxtMobileRow1="Garantia em" SetTxtMobileRow2="performance de" SetTxtMobileRow3="limpeza" SetTxtDesktopRow1="Garantia em performance de limpeza"/>
-                <p></p>
+                <p>A lava-louças Brastemp alcançou a máxima de performance de lavagem, segundo a regulação mais rígida do mundo*</p>
 
                 <div className="slider__grid">
                     <Slider
@@ -309,6 +309,8 @@ class Videos extends React.Component {
                     </Slider>
                     
                 </div>
+                
+                <p className="small">Conforme certificação da Regulação Européia EC 1059/2010</p>*
             </div>
         )
     }
