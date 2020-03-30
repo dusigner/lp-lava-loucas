@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Headroom from 'react-headroom';
-
 // Assets
 import './lava-loucas.global.css';
 
@@ -9,13 +8,18 @@ import Menu from './components/menu/menu';
 import Modal from "./components/modal/modal";
 import SliderDesignPerformance from "./components/sliderDesignPerformance/sliderDesignPerformance";
 
+import HeroCarousel from './HeroCarousel/Index';
 // Layouts
+// import HeroCarousel from './widgets/heroCarousel/src/HeroCarousel';
+// import HeroCarousel from './layout/HeroCarousel/HeroCarousel'
+
 import DesignPerformance from './layout/design-performance/design-performance';
 import ProgamasLavagem from './layout/programas-lavagem/programas-lavagem';
 import Videos from './layout/videos/videos';
 import GuiaCompras from './layout/guia-compras/guia-compras';
 import Vitrine from "./layout/vitrine/vitrine";
 import AssistenciaTecnica from "./layout/assistencia-tecnica/assistencia-tecnica";
+
 
 class LavaLoucas extends React.Component {
 
@@ -30,6 +34,7 @@ class LavaLoucas extends React.Component {
 	}
 	
 	componentDidMount() {
+		console.log()
 
     }
 
@@ -91,15 +96,18 @@ class LavaLoucas extends React.Component {
 	
 	}
 	
-	render() { 
+	render() {
+		const { data } = this.props;
+		const Banners = {}; 
 		return (
             <div className="lava-loucas">
 				
 				<Headroom disableInlineStyles>
 					<Menu />
 				</Headroom>
-				
+
 				<div id="destaque" className="section">
+					<HeroCarousel />
 					DESTAQUE
 					<br/><br/><br/>
 					DESTAQUE

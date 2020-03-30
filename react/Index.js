@@ -13,6 +13,7 @@ class lavaloucas extends Component {
                     <SEO title={"Brastemp | Sem dúvida, Brastemp."} description={"Eletrodomésticos e acessórios para sua cozinha e lavanderia. Conheça nossa linha de fogões, fornos, geladeiras, lavadoras, microondas e muito mais."} />
                     <main id="main" className="main">
                     <ExtensionPoint id="header" hideSupportMenu={true} />
+                    {/* <ExtensionPoint id="HeroCarousel" /> */}
                 	<LavaLoucas />
                     <ExtensionPoint id="footer"  hideSupportMenu={true} />
                 </main>

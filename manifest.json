@@ -25,7 +25,12 @@
     "brastemp.header": "1.x",
     "brastemp.footer": "1.x",
     "brastemp.components": "1.x",
-    "brastemp.queries": "1.x"
+    "brastemp.queries": "1.x",
+    "brastemp.utils": "1.x",
+    "brastemp.ecohouse-pj-components": "1.x",
+    "brastemp.ecohouse-pj-queries": "1.x",
+    "brastemp.ecohouse-pj-utils": "1.x",
+    "brastemp.layout-context": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
