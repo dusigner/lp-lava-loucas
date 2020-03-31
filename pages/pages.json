@@ -20,7 +20,7 @@
           "component": "brastemp.header/Header"
         },
         "heroCarousel": {
-          "component": "HeroCarousel"
+          "component": "brastemp.components/HeroCarousel"
         },
         "footer": {
           "component": "brastemp.footer/Footer"
