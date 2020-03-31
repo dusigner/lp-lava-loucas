@@ -401,8 +401,8 @@ class sliderDesignInovador extends React.Component {
                         />
                         <div className="slider__content">
                             <div>
-                                <h2 data-tag="soft-close">Gaveta de talheres </h2>
-                                <p>Painel com acabamento inteiriço, tampa de vidro temperado de ponta a ponta e detalhes cromados.</p>
+                                <h2 data-tag="soft-close">Gaveta de Talheres</h2>
+                                <p>Compartimento exclusivo para talheres e louças menores.</p>
                             </div>
                         </div>
                     </div>
@@ -420,8 +420,8 @@ class sliderDesignInovador extends React.Component {
                         />
                         <div className="slider__content">
                             <div>
-                                <h2 data-tag="cesto-inox">Identificador de estapas</h2>
-                                <p>Painel com acabamento inteiriço, tampa de vidro temperado de ponta a ponta e detalhes cromados.</p>
+                                <h2 data-tag="cesto-inox">Identificador de Etapas</h2>
+                                <p>Função que permite acompanhar o processo de lavagem etapa por etapa.</p>
                             </div>
                         </div>
                     </div>
@@ -440,12 +440,10 @@ class sliderDesignInovador extends React.Component {
                         <div className="slider__content">
                             <div>
                                 <h2>Cesto Flexível</h2>
-                                <p>Painel com acabamento inteiriço, tampa de vidro temperado de ponta a ponta e detalhes cromados.</p>
+                                <p>O Cesto Flexível permite o ajuste de altura das prateleiras, adequando aos utensílios de tamanhos maiores, como panelas e travessas.</p>
                             </div>
                         </div>
                     </div>
-
-                        
 					</Slider>
 				<div className="slider__design-inovador-nav">
                     <Slider
@@ -495,7 +493,7 @@ class sliderDesignInovador extends React.Component {
                                 <path className="hover_fill" fillRule="evenodd" clipRule="evenodd" d="M35.8182 38C35.8182 41.3137 38.5045 44 41.8182 44C45.1319 44 47.8182 41.3137 47.8182 38C47.8182 34.6863 45.1319 32 41.8182 32C38.5045 32 35.8182 34.6863 35.8182 38ZM41.8182 30C37.3999 30 33.8182 33.5817 33.8182 38C33.8182 42.4183 37.3999 46 41.8182 46C46.2365 46 49.8182 42.4183 49.8182 38C49.8182 33.5817 46.2365 30 41.8182 30Z" fill="black"/>
                                 <path className="hover_fill" fillRule="evenodd" clipRule="evenodd" d="M57.6364 38C57.6364 41.3137 60.3227 44 63.6364 44C66.9501 44 69.6364 41.3137 69.6364 38C69.6364 34.6863 66.9501 32 63.6364 32C60.3227 32 57.6364 34.6863 57.6364 38ZM63.6364 30C59.2181 30 55.6364 33.5817 55.6364 38C55.6364 42.4183 59.2181 46 63.6364 46C68.0546 46 71.6364 42.4183 71.6364 38C71.6364 33.5817 68.0546 30 63.6364 30Z" fill="black"/>
                             </svg>
-                            <h3>Identificador de<br /> etapas</h3>
+                            <h3>Identificador de<br /> Etapas</h3>
                         </div>
                         <div className="gtm-tagModal" data-tag="agua-quente">
                             <svg width="83" height="76" viewBox="0 0 83 76" fill="none" xmlns="http://www.w3.org/2000/svg">

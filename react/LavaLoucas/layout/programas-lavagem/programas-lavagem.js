@@ -71,7 +71,7 @@ class programasLavagem extends React.Component {
                             </div>
                             <div className="slide__lavagem-text">
                                 <h3>Acquaspray</h3>
-                                <p>Com a função Acqua Spray, você pode acumular a louça e lavar de uma vez só. Isso porque ela libera jatos de água fazendo uma pré-lavagem que remove a sujeira e evita odores.</p>
+                                <p>Com a função Acquaspray, você pode acumular a louça e lavar de uma vez só. Isso porque ela libera jatos de água, fazendo uma pré-lavagem que remove a sujeira e evita odores.</p>
                             </div>
                         </div>
                     </div>
@@ -86,8 +86,8 @@ class programasLavagem extends React.Component {
                                 </svg>
                             </div>
                             <div className="slide__lavagem-text">
-                                <h3>Pesado</h3>
-                                <p>Indicado para remover as sujeiras mais difíceis! Lava com eficiência até panelas e travessas, sem ser necessária a pré-lavagem.</p>
+                                <h3>Ciclo Pesado</h3>
+                                <p>Indicado para remover as sujeiras mais difíceis. Lava com eficiência até panelas e travessas, sem ser necessária a pré-lavagem. </p>
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ class programasLavagem extends React.Component {
                             </div>
                             <div className="slide__lavagem-text">
                                 <h3>Delicado</h3>
-                                <p>Ciclo que garante o maior cuidado com as peças delicadas como taças e cristais, mas mantendo a performance para uma lavagem impecável.</p>
+                                <p>Ciclo que garante o cuidado com as peças delicadas como taças e cristais, mas mantendo a performance para uma lavagem impecável.</p>
                             </div>
                         </div>
                     </div>
@@ -143,8 +143,8 @@ class programasLavagem extends React.Component {
                                 </svg>
                             </div>
                             <div className="slide__lavagem-text">
-                                <h3>Rápido</h3>
-                                <p>Com a função Acqua Spray, você pode acumular a louça e lavar de uma vez só. Isso porque ela libera jatos de água fazendo uma pré-lavagem que remove a sujeira e evita odores.</p>
+                                <h3>Ciclo Rápido</h3>
+                                    <p>Garante louças limpas com um menor tempo de lavagem.</p>
                             </div>
                         </div>
                     </div>
@@ -157,8 +157,8 @@ class programasLavagem extends React.Component {
                                 </svg>
                             </div>
                             <div className="slide__lavagem-text">
-                                <h3>Econômico</h3>
-                                <p>Indicado para remover as sujeiras mais difíceis! Lava com eficiência até panelas e travessas, sem ser necessária a pré-lavagem.</p>
+                                <h3>Ciclo Econômico</h3>
+                                <p>Garante uma lavagem eficiente com uma menor quantidade de recursos, como água e sabão.</p>
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@ class programasLavagem extends React.Component {
                             </div>
                             <div className="slide__lavagem-text">
                                 <h3>Dia a dia</h3>
-                                <p>Ciclo que garante o maior cuidado com as peças delicadas como taças e cristais, mas mantendo a performance para uma lavagem impecável.</p>
+                                <p> Ciclo ideal para as lavagens de peças comuns como pratos, talheres, copos e xícaras.</p>
                             </div>
                         </div>
                     </div>
@@ -190,7 +190,7 @@ class programasLavagem extends React.Component {
                             </div>
                             <div className="slide__lavagem-text">
                                 <h3>Meia carga</h3>
-                                <p>Tecnologia avançada que identifica o nível de sujeira e seleciona automaticamente o melhor ciclo de lavagem!</p>
+                                <p>Os ciclos de lavagens são ajustados para uma menor quantidade de louças, proporcionando o melhor aproveitamento de água e sabão, sem comprometer a lavagem das louças. </p>
                             </div>
                         </div>
                     </div>
